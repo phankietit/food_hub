@@ -1,3 +1,5 @@
+import 'package:food_hub/bindings/welcome_binding.dart';
+import 'package:food_hub/constants/colors.dart';
 import 'package:food_hub/routes/links.dart';
 import 'package:food_hub/routes/routes.dart';
 import 'package:easy_localization/easy_localization.dart';
@@ -12,8 +14,8 @@ void main() async {
     EasyLocalization(
         supportedLocales: const [Locale('en', 'US'), Locale('vi', 'VN')],
         path: 'assets/translations', //
-        fallbackLocale: const Locale('vi', 'VN'),
-        startLocale: const Locale('vi', 'VN'),
+        fallbackLocale: const Locale('en', 'US'),
+        startLocale: const Locale('en', 'US'),
         child: const MyApp()),
   );
 }
@@ -32,11 +34,17 @@ class MyApp extends StatelessWidget {
         supportedLocales: context.supportedLocales,
         locale: context.locale,
         theme: ThemeData(
-          textTheme: TextTheme(
-              //To support the following, you need to use the first initialization method
-              button: TextStyle(fontSize: 45.sp)),
+          fontFamily: "SofiaPro",
+          textTheme: const TextTheme(
+            bodyText1: TextStyle(fontWeight: FontWeight.w500),
+            bodyText2: TextStyle(fontWeight: FontWeight.w500),
+          ).apply(
+            bodyColor: AppColors.dark100,
+            displayColor: AppColors.dark100,
+          ),
         ),
-        initialRoute: AppLinks.HOME,
+        initialBinding: WelcomeBinding(),
+        initialRoute: AppLinks.WELCOME,
         getPages: AppRoutes.pages,
       ),
     );

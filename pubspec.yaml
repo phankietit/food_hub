@@ -40,6 +40,7 @@ dependencies:
   get_storage: ^2.0.3
   loading_indicator: ^3.0.3
   flutter_native_splash: ^2.1.1
+  flutter_svg: ^1.0.3
 
 dev_dependencies:
   flutter_test:
@@ -69,6 +70,21 @@ flutter:
 
   assets:
     - assets/translations/
+    - assets/images/
+    - assets/fonts/
+    - assets/icons/
+    - assets/logo/
+  fonts:
+    - family: SofiaPro
+      fonts:
+        - asset: assets/fonts/Sofia_Pro_Medium.otf
+          weight: 500
+        - asset: assets/fonts/Sofia_Pro_Regular.otf
+          weight: 300
+        - asset: assets/fonts/Sofia_Pro_Semi_Bold.otf
+          weight: 700
+        - asset: assets/fonts/Sofia_Pro_Bold.otf
+          weight: 900
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

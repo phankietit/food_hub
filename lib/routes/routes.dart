@@ -1,5 +1,6 @@
 import 'package:food_hub/bindings/home_binding.dart';
-import 'package:food_hub/presentation/screens/home/home_page.dart';
+import 'package:food_hub/bindings/welcome_binding.dart';
+import 'package:food_hub/presentation/screens/welcome/welcome_page.dart';
 import 'package:get/get.dart';
 
 import 'links.dart';
@@ -7,9 +8,9 @@ import 'links.dart';
 class AppRoutes {
   static final pages = [
     GetPage(
-      name: AppLinks.HOME,
-      page: () => const HomePage(),
-      binding: HomeBinding(),
+      name: AppLinks.WELCOME,
+      page: () => WelcomePage(),
+      binding: WelcomeBinding(),
     ),
     // GetPage(
     //   name: AppLinks.DASHBOARD,
