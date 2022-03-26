@@ -7,5 +7,13 @@
 # Screenshot
 
 ![Welcome](screenshots/welcome.png?raw=true "Title")
+![Welcome](screenshots/drawer.png?raw=true "Title")
+![Welcome](screenshots/home_01.png?raw=true "Title")
+![Welcome](screenshots/home_02.png?raw=true "Title")
+![Welcome](screenshots/detail.png?raw=true "Title")
 
-### UI designed by Prelook Studio
+# Video
+
+[![Watch the video](screenshots/detail.png?raw=true)](https://youtu.be/rMu6XOnE0UI)
+
+#### UI designed by Prelook Studio
