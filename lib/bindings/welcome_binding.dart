@@ -1,3 +1,4 @@
+import 'package:food_hub/controllers/authen_controller.dart';
 import 'package:food_hub/controllers/welcome_controller.dart';
 import 'package:get/get.dart';
 

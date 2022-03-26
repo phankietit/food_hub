@@ -8,5 +8,15 @@
     "google": "Google",
     "start_with_mail_phone": "Start with email or phone",
     "have_account": "Already have an account? ",
-    "sign_in": "Sign in"
+    "sign_in": "Sign in",
+    "deliver_to": "Deliver to",
+    "what_you_like": "What would you like\nto order",
+    "find_food_restaurant": "Find for food or restaurant...",
+    "featured_restaurant": "Featured Restaurants",
+    "view_all": "View All",
+    "popular_item": "Popular Items",
+    "log_out": "Log Out",
+    "see_review": "See Review",
+    "food_add_on": "Choice of Add On",
+    "add_to_cart": "Add to cart"
 }

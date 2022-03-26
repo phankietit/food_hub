@@ -71,6 +71,8 @@ flutter:
   assets:
     - assets/translations/
     - assets/images/
+    - assets/images/categories/
+    - assets/images/restaurants/
     - assets/fonts/
     - assets/icons/
     - assets/logo/

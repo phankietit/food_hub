@@ -7,9 +7,7 @@ class CountController extends GetxController with StateMixin<int> {
   void onInit() {
     repository.getCount().then((resp) {
       change(resp, status: RxStatus.success());
-      print("success");
     }, onError: (err) {
-      print(err);
       change(
         null,
         status: RxStatus.error('Error get data'),
@@ -22,7 +20,6 @@ class CountController extends GetxController with StateMixin<int> {
     _loading();
     repository.increase(state).then((value) {
       change(value, status: RxStatus.success());
-      print("success increase");
     }, onError: (err) {
       printError(info: err.toString());
       change(null, status: RxStatus.error());
@@ -33,7 +30,6 @@ class CountController extends GetxController with StateMixin<int> {
     _loading();
     repository.decrease(state).then((value) {
       change(value, status: RxStatus.success());
-      print("success decrease");
     }, onError: (err) {
       printError(info: err.toString());
       change(null, status: RxStatus.error());

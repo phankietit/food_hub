@@ -1,4 +1,5 @@
 import 'package:easy_localization/easy_localization.dart';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -199,6 +200,8 @@ class WelcomePage extends GetView<WelcomeController> {
             ),
             children: [
               TextSpan(
+                  recognizer: TapGestureRecognizer()
+                    ..onTap = controller.goToHome,
                   text: tr("sign_in"),
                   style: const TextStyle(
                     fontWeight: FontWeight.w500,

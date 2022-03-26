@@ -9,4 +9,20 @@ class AppShadow {
       offset: Offset(3, 6), // changes position of shadow
     ),
   ];
+
+  static const List<BoxShadow> buttonWhite = [
+    BoxShadow(
+      color: AppColors.gray5,
+      blurRadius: 15,
+      offset: Offset(5, 10), // changes position of shadow
+    ),
+  ];
+
+  static const List<BoxShadow> bottomTab = [
+    BoxShadow(
+      color: AppColors.gray5,
+      blurRadius: 15,
+      offset: Offset(0, -10), // changes position of shadow
+    ),
+  ];
 }

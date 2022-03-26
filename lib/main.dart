@@ -1,4 +1,4 @@
-import 'package:food_hub/bindings/welcome_binding.dart';
+import 'package:food_hub/bindings/authen_binding.dart';
 import 'package:food_hub/constants/colors.dart';
 import 'package:food_hub/routes/links.dart';
 import 'package:food_hub/routes/routes.dart';
@@ -10,6 +10,7 @@ import 'package:get_storage/get_storage.dart';
 
 void main() async {
   await GetStorage.init();
+  AuthenBinding().dependencies();
   runApp(
     EasyLocalization(
         supportedLocales: const [Locale('en', 'US'), Locale('vi', 'VN')],
@@ -43,7 +44,7 @@ class MyApp extends StatelessWidget {
             displayColor: AppColors.dark100,
           ),
         ),
-        initialBinding: WelcomeBinding(),
+        initialBinding: AuthenBinding(),
         initialRoute: AppLinks.WELCOME,
         getPages: AppRoutes.pages,
       ),
